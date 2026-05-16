@@ -234,3 +234,303 @@ pub const PARTNERS: &[Partner] = &[
     Partner { file: "p-label-startup.png", alt: "Label Startup", title: "Label n° 0108242769" },
     Partner { file: "p-label-innovant.png", alt: "Label Projet Innovant", title: "Label n° 13122331145" },
 ];
+
+// ===== Press wall (N°XX header) =====
+pub const PRESS_KICKER: T = T::new("Public record", "Dossier public", "السجلّ العام");
+pub const PRESS_H2: T = T::new(
+    "From <em>Algiers</em> to <em>Seoul.</em>",
+    "D'<em>Alger</em> à <em>Séoul.</em>",
+    "من <em>الجزائر</em> إلى <em>سيول.</em>",
+);
+pub const PRESS_DECK: T = T::new(
+    "Selected for presidential programs. Photographed alongside heads of institutions. Featured on national television. The record is the proof.",
+    "Sélectionné pour des programmes présidentiels. Photographié aux côtés de chefs d'institutions. Présent sur la télévision nationale. Le dossier est la preuve.",
+    "اختير لبرامج رئاسيّة. صُوِّر إلى جانب رؤساء مؤسّسات. حلّ ضيفاً على التلفزيون الوطني. السجلّ هو الدليل.",
+);
+
+pub struct Photo {
+    pub file: &'static str,
+    pub event: T,
+    pub date: &'static str,
+    pub layout: &'static str, // w-h | w-v | w-s | w-m
+}
+
+pub const PRESS_PHOTOS: &[Photo] = &[
+    Photo {
+        file: "asep-cohort3-korea.jpg",
+        event: T::new("ASEP Cohort 3 — Algerian Startup Expedition Program", "ASEP 3ᵉ promotion — Algerian Startup Expedition Program", "الدفعة 3 لـASEP — برنامج استكشاف الستارتاب الجزائري"),
+        date: "🇰🇷 South Korea · October 2024",
+        layout: "w-h",
+    },
+    Photo {
+        file: "asep/asep-1.jpg",
+        event: T::new("\"Why not change the world?\"", "«Why not change the world?»", "«لماذا لا نُغيّر العالم؟»"),
+        date: "🇰🇷 South Korea · 2024",
+        layout: "w-v",
+    },
+    Photo {
+        file: "acf-2026-minister.jpg",
+        event: T::new("4th ACF · with Minister Yacine Oualid", "4ᵉ ACF · avec le Ministre Yacine Oualid", "المؤتمر الإفريقي 4 · مع الوزير ياسين الوليد"),
+        date: "🇩🇿 Algiers · February 2026",
+        layout: "w-m",
+    },
+    Photo {
+        file: "asc-2025-algiers.jpg",
+        event: T::new("African Startup Conference · TKAWEN booth", "African Startup Conference · stand TKAWEN", "المؤتمر الإفريقي للستارتاب · جناح تكوّن"),
+        date: "🇩🇿 CIC Algiers · 6-8 December 2025",
+        layout: "w-m",
+    },
+    Photo {
+        file: "tv-interview.jpg",
+        event: T::new("National television", "Télévision nationale", "تلفزيون وطني"),
+        date: "Echorouk · ENTV · TV6",
+        layout: "w-s",
+    },
+    Photo {
+        file: "panel-2026.jpg",
+        event: T::new("Speaker · official panel", "Intervenant · panel officiel", "متحدّث · منصّة رسميّة"),
+        date: "🇩🇿 May 2026",
+        layout: "w-s",
+    },
+    Photo {
+        file: "asep/asep-8.jpg",
+        event: T::new("Changeup Ground · POSTECH", "Changeup Ground · POSTECH", "Changeup Ground · POSTECH"),
+        date: "🇰🇷 October 2024",
+        layout: "w-s",
+    },
+    Photo {
+        file: "korea-postech.jpg",
+        event: T::new("South Korea · autumn 2024", "Corée du Sud · automne 2024", "كوريا الجنوبيّة · خريف 2024"),
+        date: "🇰🇷 ASEP expedition",
+        layout: "w-s",
+    },
+];
+
+// ===== Recognition card =====
+pub const REC_LABEL: T = T::new("Public recognition · 2025", "Reconnaissance publique · 2025", "تكريم علني · 2025");
+pub const REC_H3: T = T::new(
+    "Honoring <em>Hartem Yaakoub</em>, founder of TKAWEN.",
+    "Reconnaissance de <em>Hartem Yaakoub</em>, fondateur de TKAWEN.",
+    "تكريم <em>السيد حرتام يعقوب</em>، مؤسس شركة تكوّن الريادية.",
+);
+pub const REC_BODY: T = T::new(
+    "A public honoring ceremony recognizing the founder of TKAWEN — captured and published as part of the official record of Algeria's innovative-entrepreneurship cohort.",
+    "Une cérémonie publique de reconnaissance du fondateur de TKAWEN — captée et publiée dans le cadre du dossier officiel de la cohorte entrepreneuriale innovante d'Algérie.",
+    "حفل تكريم علني لمؤسس تكوّن — لحظة مُسجَّلة ومنشورة ضمن السجلّ الرسمي لدفعة المؤسّسات الريادية المبتكرة في الجزائر.",
+);
+
+// ===== Media library =====
+pub const MEDIA_LIBRARY_TITLE: T = T::new(
+    "Full media library",
+    "Médiathèque complète",
+    "المكتبة الإعلاميّة الكاملة",
+);
+
+pub struct Video {
+    pub yt_id: &'static str,
+    pub is_short: bool,
+    pub badge: &'static str,
+    pub tag: T,
+    pub title: T,
+}
+
+pub const VIDEOS: &[Video] = &[
+    Video { yt_id: "AJd10FY3MOQ", is_short: false, badge: "ACF 2026 · Minister visit",
+        tag: T::new("Event · 2026", "Événement · 2026", "حدث · 2026"),
+        title: T::new(
+            "Minister of Knowledge Economy visits the TKAWEN booth at ACF 2026",
+            "Le Ministre de l'Économie de la Connaissance visite le stand TKAWEN à ACF 2026",
+            "زيارة وزير اقتصاد المعرفة لجناح تكوّن خلال معرض ACF 2026"),
+    },
+    Video { yt_id: "KqXNGwPoikU", is_short: false, badge: "Palais de la Culture",
+        tag: T::new("Ministerial pitch", "Pitch ministériel", "عرض وزاري"),
+        title: T::new(
+            "Project pitch at the Palace of Culture, before Ministers of Knowledge Economy & Youth",
+            "Présentation au Palais de la Culture devant les Ministres de l'Économie de la Connaissance et de la Jeunesse",
+            "عرض المشروع بقصر الثقافة أمام وزيرَي اقتصاد المعرفة والشباب"),
+    },
+    Video { yt_id: "Rh_d5oSu0EU", is_short: false, badge: "TV · Maghreb Plus",
+        tag: T::new("TV coverage", "Couverture TV", "تغطية تلفزيونيّة"),
+        title: T::new(
+            "Maghreb Plus coverage — TKAWEN booth at 5th ACF Annaba",
+            "Couverture Maghreb Plus — stand TKAWEN à la 5ᵉ édition ACF Annaba",
+            "تغطية قناة Maghreb Plus لجناح تكوّن — الطبعة 5 لـACF عنّابة"),
+    },
+    Video { yt_id: "h0mnCHmOg3k", is_short: false, badge: "Algeria Certify · feature",
+        tag: T::new("Product feature", "Feature produit", "تقرير عن المنتج"),
+        title: T::new(
+            "\"Algerian innovation to eliminate forgery\" — Algerian Portal for Certificate Authentication",
+            "«Innovation algérienne pour éliminer la falsification» — Portail algérien d'authentification des certificats",
+            "«ابتكار جزائري للقضاء على التزوير» — البوّابة الجزائريّة لتوثيق الشهادات"),
+    },
+    Video { yt_id: "vMrVmxZxTeg", is_short: false, badge: "ACF 2025",
+        tag: T::new("Conference talk", "Conférence", "مداخلة"),
+        title: T::new(
+            "Hartem Yaakoub — 4th African Conference for Startups 2025",
+            "Hartem Yaakoub — 4ᵉ édition Conférence Africaine des Startups 2025",
+            "حرتام يعقوب — الطبعة 4 للمؤتمر الإفريقي للمؤسسات الناشئة 2025"),
+    },
+    Video { yt_id: "8aDNr-dzMMQ", is_short: false, badge: "Illizi Incubator",
+        tag: T::new("Founder talk", "Talk fondateur", "مداخلة مؤسّس"),
+        title: T::new(
+            "\"My Story with Entrepreneurship\" — Illizi Business Incubator",
+            "«Mon histoire avec l'entrepreneuriat» — Incubateur des Affaires d'Illizi",
+            "«حكايتي مع ريادة الأعمال» — حاضنة الأعمال إيليزي"),
+    },
+    Video { yt_id: "fS_yEvbkLMM", is_short: false, badge: "🇰🇷 ASEP · Incheon",
+        tag: T::new("International · 2024", "International · 2024", "دولي · 2024"),
+        title: T::new(
+            "ASEP training in South Korea — Incheon",
+            "Formation ASEP en Corée du Sud — Incheon",
+            "دورات تكوينيّة في كوريا الجنوبيّة — برنامج ASEP بمدينة إنتشون"),
+    },
+    Video { yt_id: "wiACsdyFbLA", is_short: false, badge: "UBMA · Decree 1275",
+        tag: T::new("Academic training", "Formation académique", "تكوين أكاديمي"),
+        title: T::new(
+            "Training session for UBMA students enrolled under Decree 1275",
+            "Session de formation pour les étudiants de l'UBMA inscrits sous le décret 1275",
+            "دورة تكوينيّة لفائدة طلبة جامعة باجي مختار عنّابة — في إطار القرار 1275"),
+    },
+    Video { yt_id: "69hq2LrbL-A", is_short: false, badge: "UBMA Incubator",
+        tag: T::new("Workshop", "Atelier", "ورشة"),
+        title: T::new(
+            "Workshop at Université Badji Mokhtar Annaba Incubator",
+            "Atelier à l'Incubateur de l'Université Badji Mokhtar Annaba",
+            "ورشة عمل بحاضنة جامعة باجي مختار عنّابة"),
+    },
+    Video { yt_id: "hcR5fh5VA5A", is_short: false, badge: "Services overview",
+        tag: T::new("Portfolio", "Portefeuille", "المحفظة"),
+        title: T::new(
+            "TKAWEN & Algeria Certify services",
+            "Services TKAWEN & Algeria Certify",
+            "خدمات TKAWEN و Algeria Certify"),
+    },
+    Video { yt_id: "82NgotOO2ZY", is_short: true, badge: "TV · Channel 6",
+        tag: T::new("TV appearance · clip 2", "Apparition TV · clip 2", "ظهور تلفزيوني · مقطع 2"),
+        title: T::new(
+            "Salam Chab — Channel 6 / TV6 — second clip",
+            "Salam Chab — Canal 6 / TV6 — deuxième extrait",
+            "«سلام شاب» — القناة السادسة / TV6 — مقطع ثانٍ"),
+    },
+];
+
+// ===== Timeline =====
+pub const TL_KICKER: T = T::new("Chronology", "Chronologie", "التسلسل الزمني");
+pub const TL_H2: T = T::new(
+    "A founder's <em>chronology.</em>",
+    "Chronologie d'un <em>fondateur.</em>",
+    "تسلسل <em>زمني</em> لمؤسّس.",
+);
+
+pub struct TLEntry {
+    pub date: &'static str,
+    pub title: T,
+    pub ctx: Option<T>,
+}
+
+pub const TIMELINE: &[TLEntry] = &[
+    TLEntry { date: "2017 — 2022",
+        title: T::new(
+            "State Engineer · <em>Industrial Hygiene & Safety</em>",
+            "Ingénieur d'État · <em>Hygiène & Sécurité Industrielle</em>",
+            "مهندس دولة · <em>الوقاية والأمن الصناعي</em>"),
+        ctx: Some(T::new(
+            "Studies at Université Badji Mokhtar — Annaba. Operational training-ecosystem experience built in parallel.",
+            "Études à l'UBMA. Expérience opérationnelle parallèle dans l'écosystème formation.",
+            "دراسات بجامعة باجي مختار. خبرة تشغيليّة موازية في منظومة التكوين.")),
+    },
+    TLEntry { date: "7 August 2023",
+        title: T::new(
+            "TKAWEN founded · <em>first national academic spin-off cohort at UBMA</em>",
+            "TKAWEN fondée · <em>première promotion nationale de spin-offs académiques à l'UBMA</em>",
+            "تأسيس تكوّن · <em>أوّل دفعة وطنيّة من الـspin-offs الأكاديميّة بجامعة باجي مختار</em>"),
+        ctx: Some(T::new(
+            "Under arrêté ministériel n° 1275 of MESRS, in the framework of décret exécutif 20-254. Matricule UBMA-STARTUP-2023-00062.",
+            "Sous arrêté ministériel n° 1275 du MESRS, dans le cadre du décret exécutif 20-254. Matricule UBMA-STARTUP-2023-00062.",
+            "بموجب القرار الوزاري رقم 1275 من وزارة التعليم العالي، في إطار المرسوم التنفيذي 20-254. المتريكول UBMA-STARTUP-2023-00062.")),
+    },
+    TLEntry { date: "17 December 2023",
+        title: T::new(
+            "Label <em>Projet Innovant</em>",
+            "Label <em>Projet Innovant</em>",
+            "علامة «<em>مشروع مبتكر</em>»"),
+        ctx: Some(T::new("N° 13122331145 — Ministry of Knowledge Economy.", "N° 13122331145.", "رقم 13122331145.")),
+    },
+    TLEntry { date: "7 March 2024",
+        title: T::new(
+            "Top 20 Innovative Projects · <em>national ranking</em>",
+            "Top 20 Projets Innovants · <em>classement national</em>",
+            "ضمن أفضل 20 مشروع مبتكر · <em>تصنيف وطني</em>"),
+        ctx: None,
+    },
+    TLEntry { date: "5 August 2024",
+        title: T::new(
+            "Label <em>Startup</em>",
+            "Label <em>Startup</em>",
+            "علامة «<em>مؤسسة ناشئة</em>»"),
+        ctx: Some(T::new("N° 0108242769.", "N° 0108242769.", "رقم 0108242769.")),
+    },
+    TLEntry { date: "October 2024 · 🇰🇷",
+        title: T::new(
+            "ASEP Cohort 3 · <em>South Korea</em>",
+            "ASEP 3ᵉ promotion · <em>Corée du Sud</em>",
+            "الدفعة الثالثة لـASEP · <em>كوريا الجنوبيّة</em>"),
+        ctx: Some(T::new(
+            "POSTECH · Seoul AI Hub · COEX · Startup Park Incheon. Encounters with the Algerian Ambassador to Korea and senior officials.",
+            "POSTECH · Seoul AI Hub · COEX · Startup Park Incheon. Rencontres avec l'Ambassadeur d'Algérie en Corée et de hautes personnalités.",
+            "POSTECH · مركز سيول للذكاء الاصطناعي · COEX · Startup Park Incheon. لقاءات مع سفير الجزائر بكوريا وشخصيّات رفيعة.")),
+    },
+    TLEntry { date: "May 2025",
+        title: T::new(
+            "Strategic encounter · <em>digital trust infrastructure</em>",
+            "Rencontre stratégique · <em>infrastructure de confiance digitale</em>",
+            "لقاء استراتيجي · <em>البنية التحتيّة للثقة الرقميّة</em>"),
+        ctx: Some(T::new(
+            "With the Minister of Youth and the President of the High Council of Youth.",
+            "Avec le Ministre de la Jeunesse et le Président du Conseil Supérieur de la Jeunesse.",
+            "مع وزير الشباب ورئيس المجلس الأعلى للشباب.")),
+    },
+    TLEntry { date: "December 2025 · 🇩🇿",
+        title: T::new(
+            "African Startup Conference · <em>TKAWEN booth, CIC Algiers</em>",
+            "African Startup Conference · <em>stand TKAWEN, CIC Alger</em>",
+            "المؤتمر الإفريقي للستارتاب · <em>جناح تكوّن، مركز المؤتمرات بالجزائر</em>"),
+        ctx: None,
+    },
+    TLEntry { date: "February 2026",
+        title: T::new(
+            "4th ACF · <em>handshake with Minister Yacine Oualid</em>",
+            "4ᵉ ACF · <em>poignée de main avec le Ministre Yacine Oualid</em>",
+            "المؤتمر الإفريقي للمؤسّسات الناشئة 4 · <em>مصافحة مع الوزير ياسين الوليد</em>"),
+        ctx: Some(T::new(
+            "National television coverage on Echorouk, ENTV, and TV6.",
+            "Couverture télévisée nationale sur Echorouk, ENTV et TV6.",
+            "تغطية تلفزيون وطني على الشروق و ENTV و TV6.")),
+    },
+    TLEntry { date: "2026 · ongoing",
+        title: T::new(
+            "Eleven platforms in production · <em>this site rewritten in Rust</em>",
+            "Onze plateformes en production · <em>ce site réécrit en Rust</em>",
+            "إحدى عشرة منصّة في الإنتاج · <em>هذا الموقع أُعيد بناؤه بـRust</em>"),
+        ctx: Some(T::new(
+            "Trust infrastructure as the wedge. Open source as the export. The world as the target market. hartem-tkawen-rs is open-source under AGPL-3.0.",
+            "L'infrastructure de confiance comme premier coin. L'open source comme export. Le monde comme marché cible. hartem-tkawen-rs est open-source sous AGPL-3.0.",
+            "البنية التحتيّة للثقة كقدمة. مفتوح المصدر كأداة تصدير. العالم كسوق مستهدف. المشروع مفتوح المصدر تحت AGPL-3.0.")),
+    },
+];
+
+// ===== Writing =====
+pub const WR_KICKER: T = T::new("Writing", "Écrits", "كتابات");
+pub const WR_H2: T = T::new("Long-form, <em>signed.</em>", "Format long, <em>signé.</em>", "سرد طويل، <em>موقَّع.</em>");
+pub const WR_SRC: T = T::new("Medium · January 2025", "Medium · janvier 2025", "Medium · جانفي 2025");
+pub const WR_TITLE: T = T::new(
+    "Global Innovation and Entrepreneurial Synergies · A Transformative Experience at ASEP in South Korea",
+    "Innovation globale et synergies entrepreneuriales · Une expérience transformative à ASEP en Corée du Sud",
+    "الابتكار العالمي والتآزر الريادي · تجربة تحوّليّة في ASEP بكوريا الجنوبيّة",
+);
+pub const WR_BODY: T = T::new(
+    "A long-form recap of the ten phases of ASEP Cohort 3 in South Korea — POSTECH, Seoul AI Hub, COEX, encounters with senior officials.",
+    "Récit long-format des dix phases d'ASEP 3 en Corée du Sud — POSTECH, Seoul AI Hub, COEX, rencontres officielles.",
+    "سرد طويل لمراحل ASEP العشر في كوريا الجنوبيّة — POSTECH ومركز سيول للذكاء الاصطناعي وCOEX ولقاءات رسميّة.",
+);
+pub const WR_READ: T = T::new("Read on Medium →", "Lire sur Medium →", "اقرأ على Medium ←");

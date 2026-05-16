@@ -208,10 +208,123 @@ pub fn page(lang: Lang, render_us: u128) -> Markup {
                     }
                 }
 
-                // CONTACT
+                // PRESS WALL (N° 04)
+                section.section id="press" {
+                    div.wrap {
+                        div.section-num { "N° 04" }
+                        div.kicker-2 { (c::PRESS_KICKER.get(lang)) }
+                        h2.head { (PreEscaped(c::PRESS_H2.get(lang))) }
+                        p.deck { (c::PRESS_DECK.get(lang)) }
+
+                        div.wall {
+                            @for p in c::PRESS_PHOTOS {
+                                div class={ "ph " (p.layout) } {
+                                    img src={ "/img/" (p.file) } alt=(p.event.get(lang)) loading="lazy";
+                                    div.cap {
+                                        div.ev { (PreEscaped(p.event.get(lang))) }
+                                        div.dt { (p.date) }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // RECOGNITION + MEDIA LIBRARY (N° 05)
+                section.section id="media" {
+                    div.wrap {
+                        div.section-num { "N° 05" }
+                        div.kicker-2 {
+                            @match lang {
+                                Lang::En => "Recognition & media library",
+                                Lang::Fr => "Reconnaissance & médiathèque",
+                                Lang::Ar => "التكريم والمكتبة الإعلاميّة",
+                            }
+                        }
+                        h2.head {
+                            @match lang {
+                                Lang::En => (PreEscaped("The <em>full record.</em>")),
+                                Lang::Fr => (PreEscaped("Le <em>dossier complet.</em>")),
+                                Lang::Ar => (PreEscaped("<em>السجلّ الكامل.</em>")),
+                            }
+                        }
+
+                        // Recognition spotlight
+                        div.rec-card {
+                            a.embed href="https://youtube.com/shorts/vSxWR347G6c" target="_blank" rel="noopener" aria-label="Recognition video" {
+                                img src="https://img.youtube.com/vi/vSxWR347G6c/hqdefault.jpg" alt="Honoring Hartem Yaakoub";
+                                span.play aria-hidden="true" {}
+                            }
+                            div {
+                                div.label { (c::REC_LABEL.get(lang)) }
+                                h3 { (PreEscaped(c::REC_H3.get(lang))) }
+                                p { (c::REC_BODY.get(lang)) }
+                            }
+                        }
+
+                        h3.media-h { (c::MEDIA_LIBRARY_TITLE.get(lang)) }
+
+                        div.media-grid {
+                            @for v in c::VIDEOS {
+                                a class="vid" href={ (if v.is_short { "https://youtube.com/shorts/" } else { "https://youtu.be/" }) (v.yt_id) } target="_blank" rel="noopener" {
+                                    div class={ "vid-thumb" (if v.is_short { " short" } else { "" }) } {
+                                        span.badge { (v.badge) }
+                                        img src={ "https://img.youtube.com/vi/" (v.yt_id) "/hqdefault.jpg" } alt="" loading="lazy";
+                                        span.play aria-hidden="true" {}
+                                    }
+                                    div.vid-tag { (v.tag.get(lang)) }
+                                    div.vid-title { (v.title.get(lang)) }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // TIMELINE (N° 06)
+                section.section {
+                    div.wrap-mid {
+                        div.section-num { "N° 06" }
+                        div.kicker-2 { (c::TL_KICKER.get(lang)) }
+                        h2.head { (PreEscaped(c::TL_H2.get(lang))) }
+
+                        div.tl style="margin-top:60px" {
+                            @for e in c::TIMELINE {
+                                div.tl-item {
+                                    div.tl-date { (e.date) }
+                                    div.tl-body {
+                                        h4 { (PreEscaped(e.title.get(lang))) }
+                                        @if let Some(ctx) = &e.ctx {
+                                            p { (ctx.get(lang)) }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // WRITING (N° 07)
+                section.section id="writing" {
+                    div.wrap-mid {
+                        div.section-num { "N° 07" }
+                        div.kicker-2 { (c::WR_KICKER.get(lang)) }
+                        h2.head { (PreEscaped(c::WR_H2.get(lang))) }
+
+                        div.writes-grid style="margin-top:60px" {
+                            a.write href="https://medium.com/@TKAWENTECH/global-innovation-and-entrepreneurial-synergies-a-transformative-experience-at-asep-in-south-korea-e71052047704" target="_blank" rel="noopener" {
+                                div.src { (c::WR_SRC.get(lang)) }
+                                h3 { (c::WR_TITLE.get(lang)) }
+                                p { (c::WR_BODY.get(lang)) }
+                                div.read { (c::WR_READ.get(lang)) }
+                            }
+                        }
+                    }
+                }
+
+                // CONTACT (N° 08)
                 section.contact id="contact" {
                     div.wrap-tight {
-                        div.section-num style="justify-content:center" { "N° 04 · " (c::CONTACT_KICKER.get(lang)) }
+                        div.section-num style="justify-content:center" { "N° 08 · " (c::CONTACT_KICKER.get(lang)) }
                         h2.head { (PreEscaped(c::CONTACT_H2.get(lang))) }
                         div.em {
                             a href="mailto:DIRECTION@takawen.dz" { "DIRECTION@takawen.dz" }
