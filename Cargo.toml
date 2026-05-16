@@ -1,6 +1,6 @@
 [package]
 name = "hartem-tkawen-rs"
-version = "0.2.0"
+version = "0.9.4"
 edition = "2021"
 authors = ["Hartem Yaakoub <DIRECTION@takawen.dz>"]
 description = "Personal site of Hartem Yaakoub — engineer & founder of TKAWEN. Server-side rendered in Rust (Axum + Maud)."
@@ -19,7 +19,7 @@ panic = "abort"
 
 [dependencies]
 axum = { version = "0.7", default-features = false, features = ["http1", "http2", "tokio", "macros", "query"] }
-tokio = { version = "1", features = ["rt-multi-thread", "net", "macros", "signal", "time"] }
+tokio = { version = "1", features = ["rt-multi-thread", "net", "macros", "signal", "time", "fs"] }
 maud = { version = "0.26", features = ["axum"] }
 tower = { version = "0.5", default-features = false }
 tower-http = { version = "0.6", features = ["compression-gzip", "compression-br", "set-header", "trace"] }
@@ -30,3 +30,4 @@ serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+sha2 = "0.10"

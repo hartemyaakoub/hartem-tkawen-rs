@@ -15,16 +15,16 @@ pub const HERO_H1: T = T::new(
     "مهندس <em>المستقبل الرقمي.</em>",
 );
 pub const HERO_DECK: T = T::new(
-    "Eleven production platforms. <strong>Three languages.</strong> A single signature. Hartem Yaakoub builds Algeria's digital infrastructure — and exports it through code.",
-    "Onze plateformes en production. <strong>Trois langues.</strong> Une seule signature. Hartem Yaakoub construit l'infrastructure digitale algérienne — et l'exporte par le code.",
-    "إحدى عشرة منصّة في الإنتاج. <strong>ثلاث لغات.</strong> توقيع واحد. حرتام يعقوب يبني البنية التحتيّة الرقميّة للجزائر — ويصدّرها عبر الكود.",
+    "Eleven production platforms. <strong>Three languages.</strong> A single signature. Hartem Yaakoub builds digital infrastructure — <strong>from Algeria, for the world.</strong>",
+    "Onze plateformes en production. <strong>Trois langues.</strong> Une seule signature. Hartem Yaakoub construit de l'infrastructure digitale — <strong>depuis l'Algérie, pour le monde.</strong>",
+    "إحدى عشرة منصّة في الإنتاج. <strong>ثلاث لغات.</strong> توقيع واحد. حرتام يعقوب يبني بنية تحتيّة رقميّة — <strong>من الجزائر، إلى العالم.</strong>",
 );
 
 // ===== Endorse strip =====
 pub const ENDORSE_LABEL: T = T::new(
-    "Recognized by Algerian institutions",
-    "Reconnu par les institutions algériennes",
-    "معترَف به من قِبل المؤسّسات الجزائريّة",
+    "Our partners in success",
+    "Nos partenaires de succès",
+    "شركاؤنا في النجاح",
 );
 
 // ===== Story (N° 01) =====
@@ -130,11 +130,13 @@ pub struct Solution {
     pub desc: T,
     pub featured: bool,
     pub span: u8, // grid span 3/4/6/12
+    pub shot: &'static str, // screenshot filename in /img/products/
+    pub metric: T, // single-line traction metric, e.g. "4,193 certificates · 4,132 institutions"
 }
 
 pub const SOLUTIONS: &[Solution] = &[
     Solution {
-        num: "N° 01 · Flagship", featured: true, span: 12,
+        num: "N° 01 · Flagship", featured: true, span: 12, shot: "liqaa.jpg",
         badge: T::new("AGPL-3.0 · Open source", "AGPL-3.0 · Open source", "AGPL-3.0 · مفتوح المصدر"),
         name: "LIQAA", url: "https://liqaa.io/",
         desc: T::new(
@@ -142,9 +144,21 @@ pub const SOLUTIONS: &[Solution] = &[
             "Une pile de visioconférence professionnelle conçue en Algérie et publiée sous AGPL-3.0. SDKs en JavaScript, PHP, Python et Go. Auto-hébergeable de bout en bout.",
             "حزمة تحاضر مرئي مهنيّة صُمّمت في الجزائر ونُشرت تحت رخصة AGPL-3.0. SDKs بـJavaScript و PHP و Python و Go. قابلة للاستضافة الذاتيّة من البداية إلى النهاية.",
         ),
+        metric: T::new("99.99% uptime · 5 lines of code to integrate · self-hostable", "Uptime 99.99% · 5 lignes de code · auto-hébergeable", "وقت تشغيل 99.99% · 5 أسطر كود · قابل للاستضافة الذاتيّة"),
     },
     Solution {
-        num: "N° 02", featured: false, span: 6,
+        num: "N° 02 · Flagship", featured: true, span: 12, shot: "meet.jpg",
+        badge: T::new("AGPL-3.0 · Self-host in 60s", "AGPL-3.0 · Auto-hébergeable en 60s", "AGPL-3.0 · استضافة ذاتيّة في 60ث"),
+        name: "LIQAA Meet", url: "https://meet.liqaa.io/",
+        desc: T::new(
+            "Video meetings without the surveillance. The open-source alternative to Zoom, Meet and Teams. AI captions in 100+ languages running entirely in your browser — never on a server. One docker command to self-host.",
+            "Visioconférence sans surveillance. L'alternative open-source à Zoom, Meet et Teams. Sous-titres IA en 100+ langues exécutés entièrement dans votre navigateur — jamais sur un serveur. Une seule commande docker pour s'auto-héberger.",
+            "اجتماعات مرئيّة بلا مراقبة. البديل المفتوح المصدر لـZoom و Meet و Teams. ترجمات AI بأكثر من 100 لغة تعمل كلّياً في متصفّحك — لا على خادم. أمر docker واحد للاستضافة الذاتيّة.",
+        ),
+        metric: T::new("E2E encrypted · 100+ languages · <1s join time · 1 docker command", "Chiffrement E2E · 100+ langues · jonction <1s · 1 commande docker", "تشفير E2E · +100 لغة · انضمام <1ث · أمر docker واحد"),
+    },
+    Solution {
+        num: "N° 03", featured: true, span: 12, shot: "certify.jpg",
         badge: T::new("National infrastructure", "Infrastructure nationale", "بنية تحتيّة وطنيّة"),
         name: "Algeria Certify", url: "https://www.algeriacertify.com/",
         desc: T::new(
@@ -152,9 +166,10 @@ pub const SOLUTIONS: &[Solution] = &[
             "Plateforme nationale de certification numérique. Certificats QR-vérifiables, vérification publique 24/7, onboarding multi-institution.",
             "منصّة وطنيّة للتوثيق الرقمي. شهادات قابلة للتحقّق عبر QR، تحقّق علني 24/7، استقطاب متعدّد المؤسّسات.",
         ),
+        metric: T::new("4,193+ tamper-proof certificates · 4,132+ verified institutions", "4 193+ certificats inviolables · 4 132+ institutions vérifiées", "+4,193 شهادة محمية · +4,132 مؤسسة موثّقة"),
     },
     Solution {
-        num: "N° 03", featured: false, span: 6,
+        num: "N° 04", featured: false, span: 6, shot: "trust.jpg",
         badge: T::new("Identity infrastructure", "Infrastructure d'identité", "بنية تحتيّة للهويّة"),
         name: "TKAWEN Trust", url: "https://trust.tkawen.com/",
         desc: T::new(
@@ -162,9 +177,10 @@ pub const SOLUTIONS: &[Solution] = &[
             "Réseau de confiance pour l'écosystème digital — un standard de credential, l'identité par domaine vérifié, et la fédération de signaux de confiance.",
             "شبكة ثقة للمنظومة الرقميّة — معيار اعتمادات، هويّة عبر النطاقات الموثَّقة، وتوحيد إشارات الثقة عبر المنصّات.",
         ),
+        metric: T::new("Federated trust across 8+ TKAWEN properties", "Confiance fédérée sur 8+ propriétés TKAWEN", "ثقة موحَّدة عبر +8 منصّات تكوّن"),
     },
     Solution {
-        num: "N° 04", featured: false, span: 4,
+        num: "N° 05", featured: false, span: 6, shot: "stoq.jpg",
         badge: T::new("SaaS", "SaaS", "SaaS"),
         name: "STOQ", url: "https://www.mystoq.com/",
         desc: T::new(
@@ -172,9 +188,10 @@ pub const SOLUTIONS: &[Solution] = &[
             "SaaS e-commerce pour les commerçants algériens. 1 708 communes mappées.",
             "SaaS للتجارة الإلكترونيّة. 1,708 بلديّة مفهرَسة، شحن مدمج.",
         ),
+        metric: T::new("1,708 communes · 58 wilayas · native DZ checkout", "1 708 communes · 58 wilayas · checkout natif DZ", "1,708 بلديّة · 58 ولاية · checkout أصلي"),
     },
     Solution {
-        num: "N° 05", featured: false, span: 4,
+        num: "N° 06", featured: false, span: 6, shot: "pharmapro.jpg",
         badge: T::new("Healthcare B2B", "Santé B2B", "صحّة B2B"),
         name: "PharmaPro", url: "https://pharmapro.tkawen.com/",
         desc: T::new(
@@ -182,9 +199,10 @@ pub const SOLUTIONS: &[Solution] = &[
             "Logiciel d'officine et parapharmacie. Stock, scan d'ordonnance, programme partenaire fondateur.",
             "برنامج تسيير الصيدليّة والباراصيدليّة. المخزون، مسح الوصفات.",
         ),
+        metric: T::new("Production B2B SaaS · 17 license endpoints · UPROMEDIC-integrated", "SaaS B2B en production · 17 endpoints licence · intégré UPROMEDIC", "SaaS B2B في الإنتاج · 17 endpoint ترخيص"),
     },
     Solution {
-        num: "N° 06", featured: false, span: 4,
+        num: "N° 07", featured: false, span: 6, shot: "catalogue.jpg",
         badge: T::new("Training catalogue", "Catalogue formation", "كاتالوغ التكوين"),
         name: "TKAWEN Catalogue", url: "https://catalogue.tkawen.com/",
         desc: T::new(
@@ -192,30 +210,32 @@ pub const SOLUTIONS: &[Solution] = &[
             "74 programmes certifiants en 18 catégories. 222 pages programmes en 3 langues.",
             "74 برنامج تكوين معتمَد عبر 18 فئة. 222 صفحة برنامج بـ3 لغات.",
         ),
+        metric: T::new("74 programs · 222 pages · 3 languages · 375 indexed URLs", "74 programmes · 222 pages · 3 langues · 375 URLs", "74 برنامج · 222 صفحة · 3 لغات · 375 رابط"),
     },
     Solution {
-        num: "N° 07", featured: false, span: 4,
-        badge: T::new("LMS", "LMS", "LMS"),
-        name: "TKAWEN Academy", url: "https://academy.tkawen.com/",
-        desc: T::new("Turn-key Learning Management System.", "LMS clé en main.", "منصّة LMS جاهزة."),
+        num: "N° 08", featured: false, span: 6, shot: "tkawen.jpg",
+        badge: T::new("Parent organization", "Organisation mère", "المؤسّسة الأمّ"),
+        name: "TKAWEN", url: "https://www.tkawen.com/",
+        desc: T::new(
+            "Société de Formation et de Services Digitaux — the parent company under décret 20-254.",
+            "Société de Formation et de Services Digitaux — la maison mère sous décret 20-254.",
+            "شركة التكوين والخدمات الرقمية — المؤسّسة الأمّ تحت المرسوم 20-254.",
+        ),
+        metric: T::new("D-U-N-S 35-355-1313 · MESRS arrêté 1275 · UBMA-STARTUP-2023-00062", "D-U-N-S 35-355-1313 · arrêté MESRS 1275", "D-U-N-S 35-355-1313 · القرار 1275"),
     },
     Solution {
-        num: "N° 08", featured: false, span: 4,
+        num: "N° 09", featured: false, span: 4, shot: "brand.jpg",
         badge: T::new("Design system", "Design system", "Design system"),
         name: "TKAWEN Brand", url: "https://brand.tkawen.com/",
         desc: T::new("Unified brand system across 15 properties.", "Système de marque unifié sur 15 propriétés.", "نظام علامة موحَّد عبر 15 خاصيّة."),
+        metric: T::new("15 properties · tokens, marks, OG", "15 propriétés · tokens, marks, OG", "15 خاصيّة · tokens · OG"),
     },
     Solution {
-        num: "N° 09", featured: false, span: 4,
-        badge: T::new("Fleet & assets", "Flotte & actifs", "أسطول وأصول"),
-        name: "TKAWEN Track", url: "https://track.tkawen.com/",
-        desc: T::new("Real-time fleet & asset tracking.", "Suivi temps réel de flotte & d'actifs.", "تتبّع فوري للأسطول والأصول."),
-    },
-    Solution {
-        num: "N° 10", featured: false, span: 12,
+        num: "N° 10", featured: false, span: 4, shot: "studio.jpg",
         badge: T::new("Media · AI", "Médias · IA", "إعلام · ذكاء اصطناعي"),
         name: "TKAWEN Studio", url: "https://studio.tkawen.com/",
         desc: T::new("Automated Arabic video production pipeline.", "Pipeline automatisé de production vidéo arabe.", "خطّ إنتاج فيديو عربي آلي."),
+        metric: T::new("Azure ar-DZ TTS · Playwright · FFmpeg pipeline", "Azure ar-DZ TTS · Playwright · FFmpeg", "Azure TTS عربي · Playwright · FFmpeg"),
     },
 ];
 

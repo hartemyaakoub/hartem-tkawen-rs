@@ -25,7 +25,7 @@ mod templates;
 
 use i18n::Lang;
 
-const VERSION: &str = env!("CARGO_PKG_VERSION");
+pub const VERSION: &str = env!("CARGO_PKG_VERSION");
 const SERVER_BANNER: &str = concat!("hartem-rs/", env!("CARGO_PKG_VERSION"), " (axum/maud)");
 
 #[derive(RustEmbed)]
@@ -47,12 +47,14 @@ async fn main() {
     let app = Router::new()
         .route("/", get(home))
         .route("/healthz", get(|| async { "ok" }))
+        .route("/download/hartem-tkawen-rs", get(download_binary))
         .route("/robots.txt", get(robots))
         .route("/sitemap.xml", get(sitemap))
         .route("/llms.txt", get(llms))
         .route("/favicon.svg", get(favicon))
         .route("/manifest.webmanifest", get(manifest))
         .route("/img/*path", get(static_file::<&str>))
+        .route("/audio/*path", get(static_file::<&str>))
         .route("/.well-known/*path", get(static_file::<&str>))
         .route("/schemas/*path", get(static_file::<&str>))
         .layer(CompressionLayer::new().gzip(true).br(true))
@@ -157,6 +159,28 @@ async fn manifest() -> impl IntoResponse {
         [(header::CONTENT_TYPE, "application/manifest+json")],
         include_str!("../assets/manifest.webmanifest"),
     )
+}
+
+async fn download_binary() -> Response {
+    use sha2::{Sha256, Digest};
+    let path = std::env::var("HARTEM_BINARY_PATH")
+        .unwrap_or_else(|_| "/usr/local/bin/hartem-tkawen-rs".to_string());
+    match tokio::fs::read(&path).await {
+        Ok(bytes) => {
+            let mut hasher = Sha256::new();
+            hasher.update(&bytes);
+            let hash = format!("{:x}", hasher.finalize());
+            Response::builder()
+                .header(header::CONTENT_TYPE, "application/octet-stream")
+                .header("content-disposition", "attachment; filename=\"hartem-tkawen-rs\"")
+                .header("x-binary-sha256", hash)
+                .header("x-binary-version", VERSION)
+                .header("x-binary-license", "AGPL-3.0-or-later")
+                .body(Body::from(bytes))
+                .unwrap()
+        }
+        Err(_) => StatusCode::NOT_FOUND.into_response(),
+    }
 }
 
 async fn static_file<T: AsRef<str>>(uri: Uri) -> Response {

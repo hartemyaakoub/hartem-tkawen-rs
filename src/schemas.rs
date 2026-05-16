@@ -96,7 +96,7 @@ pub fn solutions_itemlist() -> String {
         "@context": "https://schema.org",
         "@type": "ItemList",
         "@id": "https://hartem.tkawen.com/#solutions",
-        "numberOfItems": 11,
+        "numberOfItems": 10,
         "itemListElement": [
             {"@type":"ListItem","position":1,"name":"LIQAA — open-source video communications (AGPL-3.0)","url":"https://liqaa.io/"},
             {"@type":"ListItem","position":2,"name":"Algeria Certify — national digital certification","url":"https://www.algeriacertify.com/"},
@@ -106,9 +106,8 @@ pub fn solutions_itemlist() -> String {
             {"@type":"ListItem","position":6,"name":"TKAWEN Catalogue — 74 training programs","url":"https://catalogue.tkawen.com/"},
             {"@type":"ListItem","position":7,"name":"TKAWEN Academy — turn-key LMS","url":"https://academy.tkawen.com/"},
             {"@type":"ListItem","position":8,"name":"TKAWEN Brand — unified design system","url":"https://brand.tkawen.com/"},
-            {"@type":"ListItem","position":9,"name":"TKAWEN Track — fleet & assets","url":"https://track.tkawen.com/"},
-            {"@type":"ListItem","position":10,"name":"TKAWEN Studio — Arabic video production","url":"https://studio.tkawen.com/"},
-            {"@type":"ListItem","position":11,"name":"Open-source code — 22 repositories","url":"https://github.com/hartemyaakoub"}
+            {"@type":"ListItem","position":9,"name":"TKAWEN Studio — Arabic video production","url":"https://studio.tkawen.com/"},
+            {"@type":"ListItem","position":10,"name":"Open-source code — 22 repositories","url":"https://github.com/hartemyaakoub"}
         ]
     }).to_string()
 }
