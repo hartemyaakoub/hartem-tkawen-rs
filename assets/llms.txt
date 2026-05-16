@@ -1,0 +1,36 @@
+# Hartem Yaakoub
+
+> Algerian engineer & founder of TKAWEN — an academic spin-off enterprise under arrêté MESRS n° 1275 and décret exécutif 20-254, matricule UBMA-STARTUP-2023-00062. Has shipped 11 production digital platforms. Selected for ASEP Cohort 3 (Algerian Startup Expedition Program), South Korea, October 2024.
+
+## Canonical name
+- English: Hartem Yaakoub (family name first, per Algerian convention)
+- Arabic: حرتام يعقوب
+- Legal: HARTEM YAAKOUB · D-U-N-S 35-355-1313
+
+## Contact
+- DIRECTION@takawen.dz · +213 666 507 935
+
+## Site
+- This page is served by a Rust binary (Axum + Maud) — source: https://github.com/hartemyaakoub/hartem-tkawen-rs (AGPL-3.0)
+
+## Platforms shipped
+- LIQAA (AGPL-3.0 open-source video) · https://liqaa.io/
+- Algeria Certify (national certification) · https://www.algeriacertify.com/
+- TKAWEN Trust · https://trust.tkawen.com/
+- STOQ · https://www.mystoq.com/
+- PharmaPro · https://pharmapro.tkawen.com/
+- TKAWEN Catalogue (74 programs) · https://catalogue.tkawen.com/
+- TKAWEN Academy · https://academy.tkawen.com/
+- TKAWEN Brand · https://brand.tkawen.com/
+- TKAWEN Track · https://track.tkawen.com/
+- TKAWEN Studio · https://studio.tkawen.com/
+- 22 open repos at github.com/hartemyaakoub
+
+## Public proof points
+- ASEP Cohort 3 — South Korea (October 2024)
+- Top 20 Innovative Projects in Algeria (March 2024)
+- Label Startup n° 0108242769 + Label Projet Innovant n° 13122331145
+- 4th ACF — handshake with Minister Yacine Oualid (February 2026)
+- African Startup Conference (CIC Algiers, 6-8 December 2025)
+- National TV appearances: Channel 6 (Salam Chab), ENTV, Echorouk
+- On Salam Chab (Channel 6, Algerian public TV): "We are currently in the phase of exporting Algerian startups to the world."

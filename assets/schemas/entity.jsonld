@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://hartem.tkawen.com/#person",
+      "name": "Hartem Yaakoub",
+      "givenName": "Yaakoub",
+      "familyName": "Hartem",
+      "alternateName": ["حرتام يعقوب", "HARTEM YAAKOUB"],
+      "jobTitle": "Engineer & founder",
+      "url": "https://hartem.tkawen.com/",
+      "image": "https://hartem.tkawen.com/img/portrait.jpg",
+      "email": "DIRECTION@takawen.dz",
+      "telephone": "+213-666-507-935",
+      "nationality": {"@type": "Country", "name": "Algeria"},
+      "knowsLanguage": ["ar", "fr", "en"],
+      "sameAs": [
+        "https://www.tkawen.com/",
+        "https://catalogue.tkawen.com/",
+        "https://www.algeriacertify.com/",
+        "https://liqaa.io/",
+        "https://www.mystoq.com/",
+        "https://pharmapro.tkawen.com/",
+        "https://trust.tkawen.com/",
+        "https://brand.tkawen.com/",
+        "https://github.com/hartemyaakoub",
+        "https://github.com/hartemyaakoub/hartem-tkawen-rs",
+        "https://www.linkedin.com/in/yaakoub-hartem-25a2b722b/",
+        "https://medium.com/@TKAWENTECH",
+        "https://www.crunchbase.com/person/yaakoub-hartem"
+      ]
+    }
+  ]
+}

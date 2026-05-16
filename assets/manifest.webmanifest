@@ -1,0 +1,13 @@
+{
+  "name": "Hartem Yaakoub",
+  "short_name": "Hartem Yaakoub",
+  "description": "HSI engineer · Founder of TKAWEN · Built in Rust",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0908",
+  "theme_color": "#0a0908",
+  "lang": "en",
+  "icons": [
+    {"src": "/img/portrait.jpg", "sizes": "1080x1080", "type": "image/jpeg"}
+  ]
+}

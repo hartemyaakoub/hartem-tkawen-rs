@@ -1,0 +1,5 @@
+Contact: mailto:DIRECTION@takawen.dz
+Contact: tel:+213-666-507-935
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: fr, ar, en
+Canonical: https://hartem.tkawen.com/.well-known/security.txt
