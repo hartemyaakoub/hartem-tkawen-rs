@@ -1,0 +1,54 @@
+# حرتام يعقوب
+
+> حرتام يعقوب (Hartem Yaakoub) مهندس دولة جزائري في الوقاية والأمن الصناعي (HSI)، مؤسس تكوّن — مؤسسة منبثقة عن مشروع أكاديمي بموجب القرار الوزاري رقم 1275 والمرسوم التنفيذي 20-254 (المتريكول UBMA-STARTUP-2023-00062). شَحَن إحدى عشرة منصّة رقمية إنتاجية من عنّابة. اختير ضمن الدفعة الثالثة لـASEP في كوريا الجنوبية (أكتوبر 2024).
+
+## الهويّة
+
+- **الاسم الرسمي**: حرتام يعقوب (اللقب أوّلاً، حسب التقليد الجزائري)
+- **بالإنجليزية**: Hartem Yaakoub
+- **D-U-N-S**: 35-355-1313 · **R/C**: 23/00-1880186 A 22
+
+## التواصل
+
+DIRECTION@takawen.dz · +213 666 507 935
+
+## هذا الموقع
+
+يُخدَم هذا الموقع بـRust binary (Axum + Maud)، مفتوح المصدر تحت AGPL-3.0:
+https://github.com/hartemyaakoub/hartem-tkawen-rs
+
+يَستطيع أيّ مهندس تحميل الـbinary (9 ميغا) وتشغيله على جهازه الخاص.
+
+## المنصّات الإنتاجية
+
+- LIQAA — تحاضر مرئي مهني (SDKs بـJS/PHP/Python/Go) — https://liqaa.io/
+- LIQAA Meet — البديل المفتوح لـZoom (AGPL-3.0) — https://meet.liqaa.io/
+- Algeria Certify — منصّة وطنيّة للتوثيق الرقمي (+4,193 شهادة، +4,132 مؤسسة) — https://www.algeriacertify.com/
+- TKAWEN Trust — شبكة الثقة الرقمية — https://trust.tkawen.com/
+- STOQ — SaaS للتجارة الإلكترونية الجزائرية — https://www.mystoq.com/
+- PharmaPro — برنامج تسيير الصيدليات — https://pharmapro.tkawen.com/
+- TKAWEN Catalogue (74 برنامج تكوين) — https://catalogue.tkawen.com/
+- TKAWEN Academy (LMS) — https://academy.tkawen.com/
+- TKAWEN Brand (نظام علامة موحَّد) — https://brand.tkawen.com/
+- TKAWEN Studio (إنتاج فيديو عربي آلي) — https://studio.tkawen.com/
+
+## الكود
+
+22 مستودع مفتوح المصدر على https://github.com/hartemyaakoub
+
+## الأدلّة العامّة
+
+- ASEP الدفعة 3 — كوريا الجنوبية (أكتوبر 2024) — POSTECH، مركز سيول للذكاء الاصطناعي، COEX، Startup Park Incheon
+- ضمن أفضل 20 مشروع مبتكر في الجزائر (مارس 2024)
+- علامة «مؤسسة ناشئة» رقم 0108242769 + علامة «مشروع مبتكر» رقم 13122331145
+- المؤتمر الإفريقي للمؤسّسات الناشئة 4 — مصافحة مع الوزير ياسين الوليد (فيفري 2026)
+- African Startup Conference (مركز المؤتمرات الجزائر، 6-8 ديسمبر 2025)
+- ظهور تلفزيون وطني: القناة السادسة (سلام شاب)، ENTV، الشروق
+- على سلام شاب (القناة السادسة، التلفزيون العمومي الجزائري): «حاليّاً نحن في مرحلة تصدير المؤسّسات الناشئة الجزائريّة للعالم.»
+
+## الحسابات
+
+- LinkedIn: https://www.linkedin.com/in/yaakoub-hartem-25a2b722b/
+- GitHub: https://github.com/hartemyaakoub
+- Medium: https://medium.com/@TKAWENTECH
+- Crunchbase: https://www.crunchbase.com/person/yaakoub-hartem

@@ -436,6 +436,11 @@ pub fn page(lang: Lang, render_us: u128) -> Markup {
                 script type="application/ld+json" { (PreEscaped(crate::schemas::profile_page())) }
                 script type="application/ld+json" { (PreEscaped(crate::schemas::website())) }
                 script type="application/ld+json" { (PreEscaped(crate::schemas::solutions_itemlist())) }
+                script type="application/ld+json" { (PreEscaped(crate::schemas::howto())) }
+                script type="application/ld+json" { (PreEscaped(crate::schemas::founder_audio())) }
+                script type="application/ld+json" { (PreEscaped(crate::schemas::writing_article())) }
+                script type="application/ld+json" { (PreEscaped(crate::schemas::services_graph())) }
+                script type="application/ld+json" { (PreEscaped(crate::schemas::breadcrumb())) }
             }
             body lang=(lang.code()) {
 

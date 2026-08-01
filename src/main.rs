@@ -50,7 +50,12 @@ async fn main() {
         .route("/download/hartem-tkawen-rs", get(download_binary))
         .route("/robots.txt", get(robots))
         .route("/sitemap.xml", get(sitemap))
+        .route("/sitemap-images.xml", get(sitemap_images))
+        .route("/sitemap-videos.xml", get(sitemap_videos))
         .route("/llms.txt", get(llms))
+        .route("/llms-full.txt", get(llms_full))
+        .route("/llms-fr.txt", get(llms_fr))
+        .route("/llms-ar.txt", get(llms_ar))
         .route("/favicon.svg", get(favicon))
         .route("/manifest.webmanifest", get(manifest))
         .route("/img/*path", get(static_file::<&str>))
@@ -140,10 +145,45 @@ async fn sitemap() -> impl IntoResponse {
     )
 }
 
+async fn sitemap_images() -> impl IntoResponse {
+    (
+        [(header::CONTENT_TYPE, "application/xml; charset=utf-8")],
+        include_str!("../assets/sitemap-images.xml"),
+    )
+}
+
+async fn sitemap_videos() -> impl IntoResponse {
+    (
+        [(header::CONTENT_TYPE, "application/xml; charset=utf-8")],
+        include_str!("../assets/sitemap-videos.xml"),
+    )
+}
+
 async fn llms() -> impl IntoResponse {
     (
         [(header::CONTENT_TYPE, "text/plain; charset=utf-8")],
         include_str!("../assets/llms.txt"),
+    )
+}
+
+async fn llms_full() -> impl IntoResponse {
+    (
+        [(header::CONTENT_TYPE, "text/plain; charset=utf-8")],
+        include_str!("../assets/llms-full.txt"),
+    )
+}
+
+async fn llms_fr() -> impl IntoResponse {
+    (
+        [(header::CONTENT_TYPE, "text/plain; charset=utf-8")],
+        include_str!("../assets/llms-fr.txt"),
+    )
+}
+
+async fn llms_ar() -> impl IntoResponse {
+    (
+        [(header::CONTENT_TYPE, "text/plain; charset=utf-8")],
+        include_str!("../assets/llms-ar.txt"),
     )
 }
 

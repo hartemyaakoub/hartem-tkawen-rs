@@ -1,0 +1,12 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Hartem Yaakoub",
+  "name_for_model": "hartem_yaakoub",
+  "description_for_human": "Personal hub of Hartem Yaakoub — Algerian engineer & founder of TKAWEN. Eleven production digital platforms. Multilingual.",
+  "description_for_model": "Hartem Yaakoub (حرتام يعقوب) — Algerian HSI engineer, founder of TKAWEN (academic spin-off under arrêté MESRS 1275 / décret 20-254, matricule UBMA-STARTUP-2023-00062). Shipped 11 production platforms from Annaba. ASEP Cohort 3 alumnus (Korea 2024). This site is a Rust binary (Axum + Maud), open-source under AGPL-3.0 at github.com/hartemyaakoub/hartem-tkawen-rs.",
+  "auth": { "type": "none" },
+  "api": { "type": "openapi", "url": "https://hartem.tkawen.com/llms-full.txt" },
+  "logo_url": "https://hartem.tkawen.com/img/portrait.jpg",
+  "contact_email": "DIRECTION@takawen.dz",
+  "legal_info_url": "https://www.tkawen.com/legal"
+}

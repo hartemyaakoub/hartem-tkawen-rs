@@ -91,6 +91,82 @@ pub fn website() -> String {
     }).to_string()
 }
 
+pub fn howto() -> String {
+    json!({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "@id": "https://hartem.tkawen.com/#howto",
+        "name": "How to engage with Hartem Yaakoub / TKAWEN",
+        "description": "From first contact to certified delivery.",
+        "totalTime": "PT24H",
+        "step": [
+            {"@type":"HowToStep","position":1,"name":"Contact","text":"Email DIRECTION@takawen.dz or call +213 666 507 935 describing your need."},
+            {"@type":"HowToStep","position":2,"name":"Free diagnosis","text":"TKAWEN runs an initial diagnosis (HSE, training, digital transformation, software, certification)."},
+            {"@type":"HowToStep","position":3,"name":"Tailored proposal","text":"You receive a proposal adapted in calendar, modality, and budget — within 24h."},
+            {"@type":"HowToStep","position":4,"name":"Sign agreement","text":"Convention signed, sessions planned."},
+            {"@type":"HowToStep","position":5,"name":"Delivery","text":"Practitioner-led delivery, on-site or via LIQAA."},
+            {"@type":"HowToStep","position":6,"name":"Digital certification","text":"Outputs anchored on Algeria Certify with QR-verifiable public records."}
+        ]
+    }).to_string()
+}
+
+pub fn founder_audio() -> String {
+    json!({
+        "@context": "https://schema.org",
+        "@type": "AudioObject",
+        "@id": "https://hartem.tkawen.com/audio/intro.mp3#audio",
+        "name": "Hartem Yaakoub — Founder voice intro",
+        "description": "I am Hartem Yaakoub. I build digital infrastructure — from Algeria, for the world. Spoken introduction, broadcast-mastered (EQ + compand + reverb).",
+        "contentUrl": "https://hartem.tkawen.com/audio/intro.mp3",
+        "encodingFormat": "audio/mpeg",
+        "duration": "PT7S",
+        "inLanguage": "en",
+        "creator": {"@id":"https://hartem.tkawen.com/#person"},
+        "uploadDate": "2026-05-16T03:00:00+01:00",
+        "license": "https://www.tkawen.com/legal"
+    }).to_string()
+}
+
+pub fn writing_article() -> String {
+    json!({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": "https://medium.com/@TKAWENTECH/global-innovation-and-entrepreneurial-synergies-a-transformative-experience-at-asep-in-south-korea-e71052047704",
+        "headline": "Global Innovation and Entrepreneurial Synergies — A Transformative Experience at ASEP in South Korea",
+        "description": "Long-form recap of the 10 phases of ASEP Cohort 3 in South Korea — POSTECH, Seoul AI Hub, COEX, meetings with senior officials.",
+        "datePublished": "2025-01-27",
+        "author": {"@id":"https://hartem.tkawen.com/#person"},
+        "publisher": {"@type":"Organization","name":"Medium","url":"https://medium.com/"},
+        "url": "https://medium.com/@TKAWENTECH/global-innovation-and-entrepreneurial-synergies-a-transformative-experience-at-asep-in-south-korea-e71052047704",
+        "image": "https://hartem.tkawen.com/img/asep-cohort3-korea.jpg",
+        "inLanguage": "en"
+    }).to_string()
+}
+
+pub fn services_graph() -> String {
+    json!({
+        "@context": "https://schema.org",
+        "@graph": [
+            {"@type":"Service","@id":"https://hartem.tkawen.com/#service-liqaa","name":"LIQAA — open-source video communications","provider":{"@id":"https://hartem.tkawen.com/#person"},"areaServed":{"@type":"Country","name":"Algeria"},"serviceType":"Real-time communications platform","url":"https://liqaa.io/"},
+            {"@type":"Service","@id":"https://hartem.tkawen.com/#service-meet","name":"LIQAA Meet — open-source Zoom alternative (AGPL-3.0)","provider":{"@id":"https://hartem.tkawen.com/#person"},"areaServed":{"@type":"Country","name":"Algeria"},"serviceType":"Video conferencing application","url":"https://meet.liqaa.io/"},
+            {"@type":"Service","@id":"https://hartem.tkawen.com/#service-certify","name":"Algeria Certify — national digital certification","provider":{"@id":"https://hartem.tkawen.com/#person"},"areaServed":{"@type":"Country","name":"Algeria"},"serviceType":"Digital identity / credentialing","url":"https://www.algeriacertify.com/"},
+            {"@type":"Service","@id":"https://hartem.tkawen.com/#service-trust","name":"TKAWEN Trust — identity infrastructure","provider":{"@id":"https://hartem.tkawen.com/#person"},"areaServed":{"@type":"Country","name":"Algeria"},"serviceType":"Trust infrastructure","url":"https://trust.tkawen.com/"},
+            {"@type":"Service","@id":"https://hartem.tkawen.com/#service-stoq","name":"STOQ — e-commerce SaaS for Algerian merchants","provider":{"@id":"https://hartem.tkawen.com/#person"},"areaServed":{"@type":"Country","name":"Algeria"},"serviceType":"E-commerce platform","url":"https://www.mystoq.com/"},
+            {"@type":"Service","@id":"https://hartem.tkawen.com/#service-pharma","name":"PharmaPro — pharmacy management software","provider":{"@id":"https://hartem.tkawen.com/#person"},"areaServed":{"@type":"Country","name":"Algeria"},"serviceType":"Pharmacy management software","url":"https://pharmapro.tkawen.com/"}
+        ]
+    }).to_string()
+}
+
+pub fn breadcrumb() -> String {
+    json!({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type":"ListItem","position":1,"name":"Hartem Yaakoub","item":"https://hartem.tkawen.com/"}
+        ]
+    }).to_string()
+}
+
 pub fn solutions_itemlist() -> String {
     json!({
         "@context": "https://schema.org",

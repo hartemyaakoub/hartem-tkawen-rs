@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://hartem.tkawen.com/</loc>
+    <image:image><image:loc>https://hartem.tkawen.com/img/portrait.jpg</image:loc><image:caption>Hartem Yaakoub — official portrait</image:caption><image:title>Hartem Yaakoub portrait</image:title></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/products/liqaa.jpg</image:loc><image:caption>LIQAA — open-source video communications (AGPL-3.0)</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/products/meet.jpg</image:loc><image:caption>LIQAA Meet — open-source Zoom alternative</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/products/certify.jpg</image:loc><image:caption>Algeria Certify — national digital certification (4,193+ certificates)</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/products/trust.jpg</image:loc><image:caption>TKAWEN Trust — identity infrastructure</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/products/stoq.jpg</image:loc><image:caption>STOQ — e-commerce SaaS for Algerian merchants</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/products/pharmapro.jpg</image:loc><image:caption>PharmaPro — pharmacy management software</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/products/catalogue.jpg</image:loc><image:caption>TKAWEN Catalogue — 74 certified training programs</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/products/tkawen.jpg</image:loc><image:caption>TKAWEN — parent organization</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/products/brand.jpg</image:loc><image:caption>TKAWEN Brand — unified design system</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/products/studio.jpg</image:loc><image:caption>TKAWEN Studio — automated Arabic video production</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/partners/p-mesrs.png</image:loc><image:caption>MESRS — Ministère de l'Enseignement Supérieur</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/partners/p-ubma.png</image:loc><image:caption>Université Badji Mokhtar — Annaba</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/partners/p-asep.png</image:loc><image:caption>ASEP — Algerian Startup Expedition Program</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/partners/p-aventure.png</image:loc><image:caption>Algeria Venture — state accelerator</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/partners/p-label-startup.png</image:loc><image:caption>Label Startup — Ministry of Knowledge Economy</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/partners/p-label-innovant.png</image:loc><image:caption>Label Projet Innovant — Ministry of Knowledge Economy</image:caption></image:image>
+    <image:image><image:loc>https://hartem.tkawen.com/img/partners/p-ministere-startup.png</image:loc><image:caption>Ministère de l'Économie de la Connaissance, Startups & Micro-entreprises</image:caption></image:image>
+  </url>
+</urlset>

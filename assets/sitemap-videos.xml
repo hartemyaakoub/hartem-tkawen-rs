@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://hartem.tkawen.com/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://hartem.tkawen.com/img/portrait.jpg</video:thumbnail_loc>
+      <video:title>Hartem Yaakoub — Founder voice intro</video:title>
+      <video:description>Founder voice intro: "I am Hartem Yaakoub. I build digital infrastructure — from Algeria, for the world." Mastered with EQ + compand + reverb for cinematic delivery.</video:description>
+      <video:content_loc>https://hartem.tkawen.com/audio/intro.mp3</video:content_loc>
+      <video:duration>7</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:publication_date>2026-05-16T03:00:00+01:00</video:publication_date>
+      <video:uploader info="https://hartem.tkawen.com/">Hartem Yaakoub</video:uploader>
+    </video:video>
+  </url>
+</urlset>
