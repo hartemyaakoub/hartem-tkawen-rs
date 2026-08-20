@@ -4,14 +4,15 @@
 
 ## 1. Identity
 
-- **Core domain:** TBD — requires owner validation
+- **Core domain:** README states: “Personal site of Hartem Yaakoub (حرتام يعقوب) — engineer & founder of TKAWEN. Server-side rendered in Rust.”
 - **Technology stack:** Rust
 - **Deployment target:** TBD — requires owner validation
 - **Group:** `04-TKAWEN-ECOSYSTEM`  ·  **Path:** `D:\PROJECTS\04-TKAWEN-ECOSYSTEM\hartem-tkawen-rs`
 
 ## 2. Architecture
 
-- TBD — requires owner validation
+- Top-level shape on disk: `assets`, `deploy`, `src`.
+- The “why” behind that shape is not written down anywhere in the repository. TBD — requires owner validation
 
 _The manifest tells us the stack; it cannot tell us why the structure is the way it is. Three sentences from you here are worth more than any amount of inference from the file tree._
 
@@ -35,7 +36,8 @@ _The manifest tells us the stack; it cannot tell us why the structure is the way
 - **Remote:** git@github.com:hartemyaakoub/hartem-tkawen-rs.git
 - **Last file change:** 2026-05-16T03:12:20Z
 - **Active state:** ACTIVE
-- **Current milestone:** TBD — requires owner validation
+- **Current milestone:** Last substantive commit 2026-05-16 — “feat(audio): add Andrew-mastered 7s founder voice intro (80 KB)”. (Memory-layer commits excluded; they describe this file, not the work.)
+- **Sourced from:** README (quoted verbatim) · directory listing · git log
 - **Exact resume point:** TBD — requires owner validation
 - **Immediate next action:** TBD — requires owner validation
 
