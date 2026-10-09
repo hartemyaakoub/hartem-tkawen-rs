@@ -8,7 +8,7 @@
 - Legal: HARTEM YAAKOUB · D-U-N-S 35-355-1313
 
 ## Contact
-- DIRECTION@takawen.dz · +213 666 507 935
+- DIRECTION@takawen.dz · +213 770 122 398
 
 ## Site
 - This page is served by a Rust binary (Axum + Maud) — source: https://github.com/hartemyaakoub/hartem-tkawen-rs (AGPL-3.0)

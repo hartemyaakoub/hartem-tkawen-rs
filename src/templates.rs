@@ -871,7 +871,7 @@ pub fn page(lang: Lang, render_us: u128) -> Markup {
                     div.em {
                         a href="mailto:DIRECTION@takawen.dz" { "DIRECTION@takawen.dz" }
                         span.sep { "·" }
-                        a href="tel:+213666507935" { "+213 666 507 935" }
+                        a href="tel:+213770122398" { "+213 770 122 398" }
                     }
                     div.profiles {
                         a.profile href="https://github.com/hartemyaakoub" { "GitHub" }

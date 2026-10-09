@@ -102,6 +102,6 @@ This is intentional. The site is meant to be a reference implementation that oth
 
 ## Contact
 
-- **Hartem Yaakoub** · DIRECTION@takawen.dz · +213 666 507 935
+- **Hartem Yaakoub** · DIRECTION@takawen.dz · +213 770 122 398
 - TKAWEN · Annaba, Algeria · D-U-N-S 35-355-1313
 - Issues + PRs welcome: <https://github.com/hartemyaakoub/hartem-tkawen-rs/issues>

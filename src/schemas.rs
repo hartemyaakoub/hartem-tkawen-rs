@@ -14,7 +14,7 @@ pub fn person() -> String {
         "url": "https://hartem.tkawen.com/",
         "image": "https://hartem.tkawen.com/img/portrait.jpg",
         "email": "DIRECTION@takawen.dz",
-        "telephone": "+213-666-507-935",
+        "telephone": "+213-770-122-398",
         "nationality": {"@type":"Country","name":"Algeria"},
         "knowsLanguage": ["ar","fr","en"],
         "knowsAbout": ["Industrial Hygiene & Safety","Risk engineering","Rust","Digital infrastructure","SaaS","Open-source software","Real-time communications","Identity & trust infrastructure"],
@@ -100,7 +100,7 @@ pub fn howto() -> String {
         "description": "From first contact to certified delivery.",
         "totalTime": "PT24H",
         "step": [
-            {"@type":"HowToStep","position":1,"name":"Contact","text":"Email DIRECTION@takawen.dz or call +213 666 507 935 describing your need."},
+            {"@type":"HowToStep","position":1,"name":"Contact","text":"Email DIRECTION@takawen.dz or call +213 770 122 398 describing your need."},
             {"@type":"HowToStep","position":2,"name":"Free diagnosis","text":"TKAWEN runs an initial diagnosis (HSE, training, digital transformation, software, certification)."},
             {"@type":"HowToStep","position":3,"name":"Tailored proposal","text":"You receive a proposal adapted in calendar, modality, and budget — within 24h."},
             {"@type":"HowToStep","position":4,"name":"Sign agreement","text":"Convention signed, sessions planned."},
